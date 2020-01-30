@@ -1,0 +1,22 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../scss/helper/variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../scss/helper/var';
+//var不用加_&.scss，放變數
+
+//元件
+@import "../scss/hamburger";
+
+//pages
+@import "../scss/hp";
+@import "../scss/portfolio";
+@import "../scss/about";
+
+
+//portfolio pages
+@import "../scss/portfolio/pr_collage";
+@import "../scss/portfolio/pr_poster";
+// @import "../scss/portfolio/pr_yama_branding";
+// @import "../scss/portfolio/pr_yama_ui";
+// @import "../scss/portfolio/pr_tomato";

@@ -1,0 +1,50 @@
+.shape-morph {
+  position: absolute;
+  left: 4%;
+  top: 0%;
+  width: 90%;
+
+  svg {
+    fill: none;
+  }
+
+}
+
+.hp_text {
+  background-color: rgba(138, 115, 111, .9);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  position: absolute;
+  font-size: 3rem;
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  right: 20%;
+  bottom: 13%;
+}
+
+
+//RWD
+@media (max-width: 1680px) {
+  .shape-morph {
+    top: 8%;
+  }
+
+  .hp_text {
+    bottom: 20%;
+    right: 25%;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .shape-morph {
+    top: 25%;
+    width: 95%;
+  }
+}
+
+@media (max-width:414px) {
+  .shape-morph {
+    min-width: 100wh;
+  }
+}
