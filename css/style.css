@@ -10848,7 +10848,6 @@ p {
 
 header,
 footer {
-  border: 1px solid aqua;
   height: 80px;
 }
 
@@ -10948,8 +10947,8 @@ footer {
     display: none;
   }
   .nav_bar {
-    width: 85%;
-    right: 8%;
+    width: 92%;
+    right: 7%;
     height: 70%;
   }
   .nav_bar .navbar {
@@ -11007,7 +11006,8 @@ footer {
   position: relative;
 }
 
-.timeline-section h3, .timeline-section p {
+.timeline-section h3,
+.timeline-section p {
   font-family: 'Noto Serif TC';
 }
 
@@ -11056,10 +11056,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .timeline-section {
+  .timeline-section .row {
+    margin-bottom: 10%;
+  }
+  .timeline-section .box {
     position: static;
     display: block;
     margin: 0 auto;
+  }
+  .timeline-section .box img {
+    margin: 0 auto;
+    width: 100%;
   }
   .timeline-section:after,
   .timeline-pointer::after {
@@ -11158,8 +11165,15 @@ footer {
     height: 130%;
   }
   .about_text {
-    bottom: -27%;
+    bottom: -40%;
     left: 20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about_text {
+    bottom: -60%;
+    left: 15%;
   }
 }
 
@@ -11275,7 +11289,7 @@ footer {
 .poster_bm_text {
   font-family: 'Noto Serif TC';
   position: absolute;
-  bottom: -60%;
+  bottom: -85%;
   left: 12%;
 }
 
@@ -11291,7 +11305,7 @@ footer {
     right: 10%;
   }
   .poster_bm_text {
-    bottom: -80%;
+    bottom: -60%;
   }
 }
 

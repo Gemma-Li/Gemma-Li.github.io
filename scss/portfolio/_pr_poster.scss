@@ -34,7 +34,8 @@
 .poster_bm_text {
     font-family: 'Noto Serif TC';
     position: absolute;
-    bottom: -60%;
+    // bottom: -20%;  1920
+    bottom: -85%;
     left: 12%;
 
     .poster_bm_p {
@@ -53,15 +54,17 @@
         }
     }
     .poster_bm_text {
-        bottom: -80%;
+        bottom: -60%;
 
     }
 }
+
+
 @media (max-width:768px){
     .postpage,.poster_text{
         display: none;
     }
-    .poster_all {
+    .poster_all{
         transform: translateY(10%);
         .poster01,.poster02{
             @include reset_position();

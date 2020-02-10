@@ -97,7 +97,14 @@
     }
 
     .about_text {
-        bottom: -27%;
+        bottom: -40%;
         left: 20%;
+    }
+}
+
+@media (max-width:375px) {
+    .about_text {
+        bottom: -60%;
+        left: 15%;
     }
 }
