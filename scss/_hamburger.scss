@@ -80,6 +80,14 @@
 
 //RWD
 @media (max-width: 768px) {
+    .deco_left_ge,
+  .deco_right_ge {
+    img{
+      // top:36%;
+    display: none !important;
+    }
+    
+  }
   .nav_bar {
     width: 42%;
     right: 8%;
@@ -91,13 +99,6 @@
 }
 
 @media (max-width:414px) {
-
-  .deco_left_ge,
-  .deco_right_ge {
-    // top:36%;
-    display: none;
-  }
-
   .nav_bar {
     width: 92%;
     right: 7%;

@@ -41,7 +41,12 @@ $line-height:17.83px;
   // border: 1px solid aqua;
   position: fixed;
   top: 42%;
-  @media (max-width: 768px){
+
+}
+@media (max-width: 768px) {
+  .deco_left_ge,
+  .deco_right_ge {
+    // top:36%;
     display: none;
   }
 }
@@ -58,10 +63,12 @@ $line-height:17.83px;
 .font_caslon {
   font-family: 'Libre Caslon Text' !important;
 }
+
 //連結
-a{
+a {
   text-decoration: none;
-  &:hover{
+
+  &:hover {
     text-decoration: none;
     transition: 0.4s;
   }
