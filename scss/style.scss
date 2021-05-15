@@ -4,16 +4,12 @@
 @import '../node_modules/bootstrap/scss/mixins';
 @import '../scss/helper/var';
 //var不用加_&.scss，放變數
-
 //元件
-@import "../scss/hamburger";
-
+// @import "../scss/hamburger";
 //pages
 @import "../scss/hp";
 @import "../scss/portfolio";
 @import "../scss/about";
-
-
 //portfolio pages
 // @import "../scss/portfolio/pr_collage";
 @import "../scss/portfolio/pr_poster";
