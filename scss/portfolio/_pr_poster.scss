@@ -1,0 +1,81 @@
+.postpage {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    z-index: -1;
+    left: 12%;
+    opacity: .5;
+}
+
+.poster_all {
+    .poster01 {
+        position: absolute;
+        left: 13%;
+        top: 10%;
+    }
+
+    .poster02 {
+        position: absolute;
+        right: 13%;
+        top: 30%;
+    }
+
+}
+
+.poster_text {
+    writing-mode: vertical-lr;
+    width: 10%;
+    font-family: 'Noto Serif TC';
+    position: absolute;
+    right: 43%;
+    top: 30%;
+}
+
+.poster_bm_text {
+    font-family: 'Noto Serif TC';
+    position: absolute;
+    // bottom: -20%;  1920
+    bottom: -85%;
+    left: 12%;
+
+    .poster_bm_p {
+        padding-bottom: 10%;
+    }
+}
+
+
+@media (max-width:1440px) {
+    .poster_all {
+        .poster01 {
+            left: 10%;
+        }
+        .poster02 {
+            right: 10%;
+        }
+    }
+    .poster_bm_text {
+        bottom: -90%;
+
+    }
+}
+
+
+@media (max-width:768px){
+    .postpage,.poster_text{
+        display: none;
+    }
+    .poster_all{
+        transform: translateY(10%);
+        .poster01,.poster02{
+            @include reset_position();
+        }
+        .poster02{
+            margin-top: 10%;
+        }
+    }
+    .poster_bm_text {
+        @include reset_position();
+        transform: translateY(20%);
+        text-align: center;
+    }
+}
