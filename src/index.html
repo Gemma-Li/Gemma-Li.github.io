@@ -1,0 +1,145 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+<!--Title setting-->
+{% block title %}首頁{% endblock %}
+<!--Nav setting-->
+{% block navigation %}
+{% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}}
+{% endblock %}
+
+{% block HeadContent %}
+{% endblock %}
+
+
+{% block content %}
+<div class="idxBanner">
+    <img src="images/idxBanner.jpg" class="img-fluid">
+</div>
+<div class="idxEvents">
+    <div class="container">
+        <div id="controlsEvents">
+            <div class="controls controls-prev">
+                <i data-feather="chevron-left"></i>
+            </div>
+            <div class="controls controls-next">
+                <i data-feather="chevron-right"></i>
+            </div>
+        </div>
+        <div id="sliderEvents">
+            <img src="images/idxBanner.jpg" class="img-fluid">
+            <img src="images/idxBanner.jpg" class="img-fluid">
+            <img src="images/idxBanner.jpg" class="img-fluid">
+            <img src="images/idxBanner.jpg" class="img-fluid">
+            <img src="images/idxBanner.jpg" class="img-fluid">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2 class="scTitle" data-sal="zoom-out" data-sal-delay="1000" data-sal-easing="ease-out-back">REALTIME</h2>
+    <a class="scLink" href="#" data-sal="slide-left" data-sal-delay="300">
+        <i data-feather="alert-circle"></i>
+    </a>
+    <a class="scLink" href="#" data-sal="slide-left" data-sal-delay="600">
+        <i data-feather="alert-octagon"></i>
+    </a>
+    <a class="scLink" href="#" data-sal="slide-left" data-sal-delay="900">
+        <i data-feather="alert-triangle"></i>
+    </a>
+</div>
+
+<div class="container">
+    <i class="icon-social-twitter"></i>
+</div>
+
+<div class="container">
+    <div class="tabsdrop">
+        <div class="tabsdrop-title">常見問題</div>
+        <ul class="nav nav-pills mb-3 tabsdrop-list" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <p>Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt
+                    officia.
+                    Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna
+                    elit
+                    commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu
+                    adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure
+                    Lorem
+                    incididunt nostrud.</p>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <p>Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex. Aute sunt
+                    incididunt amet commodo est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate
+                    exercitation
+                    cillum id incididunt elit sunt. Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation
+                    duis deserunt. Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.
+                </p>
+            </div>
+            <div class="tab-pane fade active show" id="pills-contact" role="tabpanel"
+                aria-labelledby="pills-contact-tab">
+                <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure
+                    ex.
+                    Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod
+                    minim
+                    exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt
+                    reprehenderit
+                    aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure
+                    officia
+                    elit do ipsum ullamco Lorem. Ullamco ut ad minim do mollit labore ipsum laboris ipsum commodo sunt
+                    tempor enim incididunt. Commodo quis sunt dolore aliquip aute tempor irure magna enim minim
+                    reprehenderit. Ullamco consectetur culpa veniam sint cillum aliqua incididunt velit ullamco sunt
+                    ullamco
+                    quis quis commodo voluptate. Mollit nulla nostrud adipisicing aliqua cupidatat aliqua pariatur
+                    mollit
+                    voluptate voluptate consequat non.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+    $(document).ready(function () {
+        var slider = tns({
+            container: '#sliderEvents',
+            controls: true, //上下則
+            controlsContainer: "#controlsEvents",
+            nav: true, //滑點
+            navPosition: 'bottom',
+            mouseDrag: true, //拖動更改幻燈片
+            autoplay: true, //自動播放
+            autoplayButtonOutput: false, //自動播放按鈕顯示
+            rewind: false,
+            gutter: 16,
+            responsive: {
+                0: {
+                    items: 1.3
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+            }
+        });
+    });
+</script>
+{% endblock %}
