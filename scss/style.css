@@ -11044,10 +11044,21 @@ footer {
   z-index: 5;
 }
 
+@media (max-width: 414px) {
+  .idx .idx-banner .shape {
+    height: 70vh;
+  }
+}
+
 .idx .idx-banner .carousel-item img {
   width: 100%;
-  height: auto;
   height: 80vh;
+}
+
+@media (max-width: 414px) {
+  .idx .idx-banner .carousel-item img {
+    height: 70vh;
+  }
 }
 
 @-webkit-keyframes morph {
@@ -11115,6 +11126,13 @@ footer {
   .idx .idx-banner .hp_text {
     right: 15%;
     bottom: 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  .idx .idx-banner .hp_text {
+    right: 12%;
+    bottom: 8%;
   }
 }
 
