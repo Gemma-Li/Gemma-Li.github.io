@@ -11,117 +11,77 @@
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 
-<body class="bg-light text-primary">
-
-
-    <div class="container my-5">
+<body class="">
+    <div class="container-fluid font_noto portfolio-page">
         <header></header>
-        <div class="timeline-section">
-            <div class="row timeline-pointer my-5 flex-sm-row-reverse d-flex align-items-center">
-                <div class="col-sm-6">
-                    <a href="pr_work.html">
-                        <h3 class="font-weight-bolder">公司作品</h3><br><br>
-                        <p>Date:2020</p>
-                        <P>UI/UX、Code</P>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box d-flex justify-content-end"><img src="./images/PR_PAGE07-02.png" alt=""></div>
+        <div class="mt-4">
+            <ul class="font_caslon nav nav-pills mb-5 nav-progress" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link h6 mb-0 active" id="UIUX-tab" data-toggle="pill" href="#UIUX" role="tab" aria-controls="UIUX" aria-selected="true">
+                        UI/UX Design
                     </a>
-                </div>
-            </div>
-            <!-- <div class="row timeline-pointer my-5 flex-sm-row-reverse d-flex align-items-center">
-        <div class="col-sm-6">
-          <a href="pr_titan.html">
-            <h3 class="font-weight-bolder">巨神健身(專題製作)</h3><br><br>
-            <p>Date:Feb2020</p>
-            <P>UI/UX、Code</P>
-        </div>
-        <div class="col-sm-6">
-          <div class="box d-flex justify-content-end"><img src="./images/PR_titan-02.png" alt=""></div></a>
-        </div>
-      </div> -->
-            <div class="row timeline-pointer d-flex align-items-center">
-                <div class="col-sm-6 text-right hovar_ani">
-                    <a href="pr_tomato.html">
-                        <h3 class="font-weight-bolder">
-                            茄茄鐘UI/UX</h3><br><br>
-                        <p>Date:Dec2019</p>
-                        <P>番茄鐘、UI/UX</P>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box"><img src="./images/PR_PAGE03.png" alt=""></div>
-                </div>
-                </a>
-            </div>
-            <div class="row timeline-pointer my-5 flex-sm-row-reverse d-flex align-items-center">
-                <div class="col-sm-6">
-                    <a href="pr_yama_ui.html">
-                        <h3 class="font-weight-bolder">山森咖啡UI/UX</h3><br><br>
-                        <p>Date:Oct2019</p>
-                        <P>UI/UX、Code</P>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box d-flex justify-content-end"><img src="./images/PR_PAGE01.png" alt=""></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link h6 mb-0" id="Graphic-Design-tab" data-toggle="pill" href="#Graphic-Design" role="tab" aria-controls="Graphic-Design" aria-selected="false">
+                        Graphic Design
                     </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="UIUX" role="tabpanel" aria-labelledby="UIUX-tab">
+                    <div class="row mb-md-4">
+                        <!-- <div class="col-sm-4 text-center">
+                            <a href="pr_collage.html">
+                                <img src="./images/PR_PAGE06.png" class="img-fluid mb-4" alt="是減脂不是剪紙">
+                                <h3 class="font-weight-bolder">是減脂不是剪紙</h3>
+                                <p>布料、報章雜誌、等各種紙製材質拼貼</p>
+                            </a>
+                        </div> -->
+                        <div class="col-sm-4 text-center">
+                            <a href="pr_work.html">
+                                <img src="./images/PR_work.png" class="img-fluid mb-4" alt="公司作品">
+                                <h3 class="font-weight-bolder">公司作品</h3>
+                                <p>Web App UI/UX｜Coding</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a href="pr_yama_ui.html">
+                                <img src="./images/PR_yamaUI.png" class="img-fluid mb-4" alt="山森咖啡">
+                                <h3 class="font-weight-bolder">山森咖啡</h3>
+                                <p>Web UI/UX｜Coding</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a href="pr_tomato.html">
+                                <img src="./images/PR_tomato.png" class="img-fluid mb-4" alt="茄茄鐘APP">
+                                <h3 class="font-weight-bolder">茄茄鐘</h3>
+                                <p>番茄鐘APP UI/UX</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Graphic-Design" role="tabpanel" aria-labelledby="Graphic-Design-tab">
+                    <div class="row mb-md-4">
+                        <div class="col-sm-4 text-center">
+                            <a href="pr_yama_branding.html">
+                                <img src="./images/PR_yama.png" class="img-fluid mb-4" alt="山森咖啡品牌設計">
+                                <h3 class="font-weight-bolder">山森咖啡</h3>
+                                <p>Branding Design</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <a href="pr_collage.html">
+                                <img src="./images/PR_collage.png" class="img-fluid mb-4" alt="是減脂不是剪紙">
+                                <h3 class="font-weight-bolder">是減脂不是剪紙</h3>
+                                <p>Collage Art</p>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-
-
-            <div class="row my-5 timeline-pointer d-flex align-items-center">
-                <div class="col-sm-6 text-right">
-                    <a href="pr_yama_branding.html">
-                        <h3 class="font-weight-bolder">山森咖啡Branding</h3><br><br>
-                        <p>Date:Jan2019</p>
-                        <P>品牌相關設計</P>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box"><img src="./images/PR_PAGE02.png" alt=""></div>
-                    </a>
-                </div>
-                </a>
-            </div>
-            <div class="row timeline-pointer my-5 flex-sm-row-reverse d-flex align-items-center">
-                <div class="col-sm-6">
-                    <a href="pr_poster.html">
-                        <h3 class="font-weight-bolder">我們追的日本<br>私たち追いかけの日本</h3><br><br>
-                        <p>Date:Nov2018</p>
-                        <P>海報</P>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box d-flex justify-content-end"><img src="./images/PR_PAGE05.png" alt=""></div>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="row my-5 timeline-pointer d-flex align-items-center">
-                <div class="col-sm-6 text-right">
-                    <a href="pr_collage.html">
-                        <h3 class="font-weight-bolder">是減脂不是剪紙</h3><br><br>
-                        <p>Date:Oct.2018</p>
-                        <p>布料、報章雜誌、等各種紙製材質拼貼</p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="box"><img src="./images/PR_PAGE06.png" alt=""></div>
-                </div>
-                </a>
-            </div>
-            <!-- <div class="row timeline-pointer my-5 flex-sm-row-reverse d-flex align-items-center">
-          <div class="col-sm-6">
-           <a href="#">
-             <h3 class="font-weight-bolder">是減脂不是剪紙</h3><br><br>
-            <p>Date:Oct.2018</p>
-            <p>布料、報章雜誌、等各種紙製材質拼貼</p>
-          </div>
-          <div class="col-sm-6">
-            <div class="box d-flex justify-content-end">
-              <img src="./images/PR_PAGE06.png" alt="">
-            </div></a>
-          </div>
-        </div> -->
         </div>
     </div>
-
 
     <div class="hamburger mr-4">
         <span></span>
@@ -151,12 +111,11 @@
             </ul>
         </div>
     </div>
-
     <footer></footer>
-    <div class="diagonal-bg">
+    <!-- <div class="diagonal-bg">
         <svg xmlns='http://www.w3.org/2000/svg' width='120%' height='100%'>
             <line x1='100%' y1='0' x2='1' y2='100%' stroke='#ece9e6' stroke-width='30%' /></svg>
-    </div>
+    </div> -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -165,12 +124,12 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="js/hambuger.js"></script>
-    <script>
+    <!-- <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             $(".diagonal-bg svg line").attr("stroke-width", ((30 + scroll / 10) + "%"));
         });
-    </script>
+    </script> -->
 
 </body>
 

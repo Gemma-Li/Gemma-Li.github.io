@@ -10848,6 +10848,16 @@ body {
   background: #ece9e6;
 }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  padding: 0 12%;
+}
+
+@media (max-width: 540px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    padding: 0 15px;
+  }
+}
+
 .font_noto {
   font-family: 'Noto Serif TC' !important;
   line-height: 22px !important;
@@ -10865,7 +10875,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  opacity: 40%;
+  color: #352a2a;
 }
 
 ul {
@@ -11178,76 +11188,34 @@ footer {
   margin-bottom: 20px;
 }
 
-.timeline-section {
-  position: relative;
+.portfolio-page .nav-item {
+  width: 50%;
 }
 
-.timeline-section h3,
-.timeline-section p {
-  font-family: 'Noto Serif TC';
+.portfolio-page .nav-pills {
+  background-color: rgba(228, 217, 206, 0.65);
 }
 
-.timeline-section {
-  position: relative;
+.portfolio-page .nav-pills a {
+  text-align: center;
+  color: #604C4C;
+  font-size: 14.5px;
 }
 
-.timeline-section:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 3px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #8a736f;
+.portfolio-page .nav-link:hover {
+  font-weight: bold;
 }
 
-.timeline-pointer {
-  position: relative;
+.portfolio-page .nav-link.active {
+  color: #ece9e6;
+  background-color: #604C4C;
+  border-radius: 50px;
+  font-weight: bold;
 }
 
-.timeline-pointer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 3px solid #8a736f;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #e4d9ce;
-  z-index: 1;
-}
-
-.diagonal-bg {
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .timeline-section .row {
-    margin-bottom: 10%;
-  }
-  .timeline-section .box {
-    position: static;
-    display: block;
-    margin: 0 auto;
-  }
-  .timeline-section .box img {
-    margin: 0 auto;
-    width: 100%;
-  }
-  .timeline-section:after,
-  .timeline-pointer::after {
-    display: none;
-  }
+.portfolio-page ul,
+.portfolio-page li {
+  border-radius: 50px;
 }
 
 .postpage {
