@@ -6,8 +6,8 @@
     font-family: 'Libre Caslon Text';
     background-color: $primary !important;
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    width: 30%;
-    height: 60vh;
+    width: 420px;
+    height: 430px;
     text-align: center;
     z-index: 999;
     position: fixed;
@@ -34,6 +34,9 @@
     }
     .social_icon {
         opacity: 0.6;
+        a:hover {
+            opacity: 40% !important;
+        }
     }
     .copyright {
         color: rgba($color: $secondary, $alpha: 0.3);
