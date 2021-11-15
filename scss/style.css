@@ -365,23 +365,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.625rem;
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h4, .h4 {
-  font-size: 1.13rem;
+  font-size: 1.25rem;
 }
 
 h5, .h5 {
-  font-size: 1.06rem;
+  font-size: 1.125rem;
 }
 
 h6, .h6 {
@@ -3396,10 +3396,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 100px;
 }
 
 .btn-block {
@@ -3777,8 +3777,8 @@ input[type="button"].btn-block {
 }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
@@ -10865,6 +10865,7 @@ body {
 
 .font_caslon {
   font-family: 'Libre Caslon Text' !important;
+  letter-spacing: 1px;
 }
 
 a {
@@ -10908,6 +10909,11 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e4d9ce));
   background: linear-gradient(transparent, #e4d9ce);
+}
+
+.use-text {
+  font-size: 12px;
+  font-weight: normal;
 }
 
 .nav_bar {
@@ -11136,7 +11142,7 @@ footer {
   bottom: 20%;
   background-color: rgba(96, 76, 76, 0.8);
   color: #ece9e6;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: bold;
   line-height: 50px;
   letter-spacing: 2px;
@@ -11199,34 +11205,8 @@ footer {
   margin-bottom: 20px;
 }
 
-.portfolio-page .nav-item {
-  width: 50%;
-}
-
-.portfolio-page .nav-pills {
-  background-color: rgba(228, 217, 206, 0.65);
-}
-
-.portfolio-page .nav-pills a {
-  text-align: center;
-  color: #604C4C;
-  font-size: 13px;
-}
-
-.portfolio-page .nav-link:hover {
-  font-weight: bold;
-}
-
-.portfolio-page .nav-link.active {
-  color: #ece9e6;
-  background-color: #604C4C;
-  border-radius: 50px;
-  font-weight: bold;
-}
-
-.portfolio-page ul,
-.portfolio-page li {
-  border-radius: 50px;
+.portfolio-page p {
+  font-size: 0.25rem;
 }
 
 .nav-tabs {

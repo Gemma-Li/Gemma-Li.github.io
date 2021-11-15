@@ -6,29 +6,10 @@
 //     height: 100%;
 // }
 .portfolio-page {
-    .nav-item {
-        width: 50%;
-    }
-    .nav-pills {
-        background-color: rgba($success, $alpha: 0.65);
-        a {
-            text-align: center;
-            color: $primary;
-            font-size: 13px;
-        }
-    }
-    .nav-link:hover {
-        font-weight: bold;
-    }
-    .nav-link.active {
-        color: $secondary;
-        // background-color: rgba($primary, $alpha: 0.7);
-        background-color: $primary;
-        border-radius: 50px;
-        font-weight: bold;
-    }
-    ul,
-    li {
-        border-radius: 50px;
+    // h3 {
+    //     font-size: 1.5rem;
+    // }
+    p {
+        font-size: 0.25rem;
     }
 }

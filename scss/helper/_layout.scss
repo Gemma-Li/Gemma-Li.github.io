@@ -36,6 +36,7 @@ body {
 
 .font_caslon {
     font-family: 'Libre Caslon Text' !important;
+    letter-spacing: 1px;
 }
 
 //連結
@@ -77,4 +78,10 @@ footer {
     &:hover {
         background: linear-gradient(transparent, $success);
     }
+}
+
+//使用工具與軟體：
+.use-text {
+    font-size: 12px;
+    font-weight: normal;
 }
