@@ -10912,8 +10912,9 @@ footer {
 }
 
 .use-text {
-  font-size: 12px;
+  font-size: 0.5rem;
   font-weight: normal;
+  color: rgba(52, 58, 64, 0.65);
 }
 
 .nav_bar {

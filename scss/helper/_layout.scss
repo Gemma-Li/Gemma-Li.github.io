@@ -82,6 +82,8 @@ footer {
 
 //使用工具與軟體：
 .use-text {
-    font-size: 12px;
+    font-size: 0.5rem;
     font-weight: normal;
+    color: rgba($color: $dark, $alpha: 0.65);
+    // font-weight: 400;
 }
