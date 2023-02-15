@@ -1,0 +1,84 @@
+<!-- index.nunjucks -->
+{% extends "layout-portfolio.html" %}
+<!--Title setting-->
+{% block title %}山森カフェ yama mori coffee{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<!-- 內容 -->
+<div class="portfolio-page portfolio-inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-box">
+                <div class="left"></div>
+            </div>
+            <div class="right-box">
+                <div class="right">
+                    <img src="./images/pr-yamamori/banner.png" class="img-fluid banner" alt="">
+                    <div class="title">
+                        <div class="">
+                            <h3 class="font-weight-bold">山森カフェ yama mori coffee</h3>
+                            <p>工作事項：視覺設計、HTML與CSS切版
+                                <br>使用工具與軟體：Adobe Photoshop、illustrator、Xd、HTML、CSS
+                            </p>
+                        </div>
+                        <div class="">
+                            <a target="blank" class="btn btn-primary btn-sm mr-2"
+                                href="https://gemma-li.github.io/proflio_Yama-Mori-Coffee/index.html" role="button">網站展示
+                                &gt;</a>
+                            <a target="blank" class="btn btn-primary btn-sm"
+                                href="https://www.behance.net/gallery/89939643/-yama-mori-coffee-" role="button">品牌視覺規劃
+                                &gt;</a>
+                        </div>
+                    </div>
+
+                    <h4 class="font-weight-bold mt-3">【網站介紹】</h4>
+                    <p class="">在牧場裡的一間咖啡廳，但不單單只是一間咖啡廳 認真對待料理、認真對待到來這裡的朋友。 希望能讓來這邊的朋友放鬆身心靈， 在咖啡香的空間中，舒緩平時的忙碌。
+                        選一個你喜歡的座位、點一杯你喜歡的烘焙度的咖啡，好好的享受在牧場的這一天。
+                    </p>
+
+                    <h4 class="font-weight-bold">【製作過程】</h4>
+                    <div class="container">
+                        <div class="row my-4">
+                            <img class="img-fluid col-md-6 mb-4" src="./images/pr-yamamori/sitemap.png" alt="">
+                            <img class="img-fluid col-md-6 mb-4" src="./images/pr-yamamori/font.png" alt="">
+                            <div class="col-12 mb-4">
+                                <img class="img-fluid" src="./images/pr-yamamori/desing_system.png" alt="">
+
+                            </div>
+                            <img class="col-12 mb-4 img-fluid" src="./images/pr-yamamori/wirefram.png" alt="">
+
+                        </div>
+                        <img class="img-fluid" src="./images/pr-yamamori/footer-text.png" alt=" ">
+                        <p class=" ">各頁footer，除了首頁最底下有其他方式呈現GoogleMap有設超連結可點選
+                        </p>
+                        <div class="row text-dark">
+                            <div class="col-md-6  mt-3 ">
+                                <img class="img-fluid " src="./images/pr-yamamori/page_title.png" alt=" ">
+                                <p>每頁標示顏色區分和banner與頁面間文字敘述可讓使用者瀏覽至下方時也能知道在當頁。(上圖與右圖)
+                                </p>
+                                <img class="img-fluid  mt-3" src="./images/pr-yamamori/socsal.png" alt=" ">
+                                <p>社群icon設計成fixed在旁邊，上下瀏覽時也會跟著移動
+                                </p>
+                            </div>
+                            <div class="col-md-6  mt-3 mb-5">
+                                <img class="img-fluid " src="./images/pr-yamamori/page-title01.png" alt=" ">
+                                <p>每頁都有title提示使用者在哪頁</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a class="btn btn-primary btn-sm " href="portfolio.html" role="button">
+                        &lt; Back to proflio </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 內容 -->
+{% endblock %} {% block js %}
+<script>
+</script>
+{% endblock %}

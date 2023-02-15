@@ -1,0 +1,65 @@
+<!-- index.nunjucks -->
+{% extends "layout-portfolio.html" %}
+<!--Title setting-->
+{% block title %}作品列表{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<!-- 內容 -->
+<div class="portfolio-page">
+    <div class="container">
+        <div class="row">
+            <a href="portfolio-iFPG.html" class="col-md-4 card-boxs sm-mt">
+                <div class="card">
+                    <img src="./images/portfolio/ifpg-banner.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">台塑iFPG員工專用APP</h5>
+                        <p class="card-text">APP UI</p>
+                    </div>
+                </div>
+            </a>
+            <a href="portfolio-confucius.html" class="col-md-4 card-boxs">
+                <div class="card">
+                    <img src="./images/portfolio/confucius-banner.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">高雄市孔子廟祭孔問答活動站</h5>
+                        <p class="card-text">Web UI｜Coding</p>
+                    </div>
+                </div>
+            </a>
+            <a href="portfolio-garden.html" class="col-md-4 card-boxs">
+                <div class="card">
+                    <img src="./images/portfolio/garden-banner.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">高雄市表演藝術花園</h5>
+                        <p class="card-text">Web UX｜Coding</p>
+                    </div>
+                </div>
+            </a>
+            <a href="portfolio-edc.html" class="col-md-4 card-boxs">
+                <div class="card">
+                    <img src="./images/portfolio/edc-banner.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">多元支付刷卡機</h5>
+                        <p class="card-text">APP UI</p>
+                    </div>
+                </div>
+            </a>
+            <a href="portfolio-yamamori.html" class="col-md-4 card-boxs">
+                <div class="card">
+                    <img src="./images/portfolio/yama-banner.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">山森カフェ yama mori coffee</h5>
+                        <p class="card-text">Web UX｜Coding</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 內容 -->
+{% endblock %} {% block js %}
+<script>
+</script>
+{% endblock %}

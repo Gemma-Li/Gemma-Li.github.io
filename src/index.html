@@ -1,0 +1,87 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+<!--Title setting-->
+{% block title %}首頁{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<div class="idx-bg">
+    <div class="idx-banner">
+        <div id="idx-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner carousel-shape" data-ride="ture">
+                <div class="carousel-item active">
+                    <img src="images/idxbanner1.png" alt="" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Idxbanner2.png" alt="" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Idxbanner3.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+        <a href="portfolio.html" class="goto">
+            <div class="position">
+                <div class="emblem">Gemma's*Portfolio*</div>
+            </div>
+            <div class="circle h3">Go To<br>Portfolio</div>
+        </a>
+    </div>
+
+
+
+    <section class="container">
+        <div class="row idx-about">
+            <div class="deco"></div>
+            <div class="col-lg-3 idx-about-stickers"><img src="images/idx-stickers.png" class="img-fluid" alt=""></div>
+            <div class="col-lg-9 idx-about-text">
+                <h3>一個不務正業日文系的學生，混入設計的生活。</h3>
+                <h5>您好，我是宛庭<br>興趣是健身、看動畫、泰拳<br>具備規劃能力有兩年多設計經驗UI設計師<br>將需求與功能轉化為直覺易用的設計<br>主要負責UI設計、了解客戶需求、製作線稿、切版。
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="container idx-work">
+        <div class="row idx-work-1">
+            <div class="col-lg-4 ">
+                <h2 class="box box1">需求了解</h2>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="box box2">架構規劃</h2>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="box box3">視覺設計</h2>
+            </div>
+        </div>
+        <div class="row idx-work-2">
+            <div class="col-lg-5"><img src="images/idx-work4.png" class="img-fluid" alt=""></div>
+            <div class="col-lg-7 idx-work-2-text">
+                <h2>專案經歷</h2>
+                <p><strong>網站</strong><br>- 左營孔子廟活動站：視覺製作與切版<br>- 高市文化局表演藝術花園：訪談了解客戶需求、架構規劃、線稿製作、維護切版<br>-
+                    中華電信智能音箱：操作流程優化、視覺製作與切版
+                    <br>- 南投縣政府路口監控系統：視覺畫面製作與切版
+                    <br><strong>APP</strong><br>- 台塑企業員工專用APP：視覺畫面製作<br>- 中華電信多元支付機：視覺畫面製作與輕量化流程、與客戶聯繫
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+{% endblock %} {% block js %}
+<script>
+    $('.carousel').carousel({
+        interval: ture,
+        // interval: 1,
+        wrap: true,
+    })
+</script>
+<script src="js/emblem.js"></script>
+{% endblock %}

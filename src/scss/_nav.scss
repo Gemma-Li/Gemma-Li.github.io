@@ -1,0 +1,95 @@
+.nav-bar {
+    display: none;
+}
+
+.nav-bar {
+    background-color: $primary;
+    border-radius: $border-radius;
+    position: fixed;
+    width: 320px;
+    z-index: 999;
+    right: 4%;
+    top: 10%;
+    font-size: $h5-font-size;
+
+    @include media-breakpoint-down(lg) {
+        top: 8%;
+    }
+
+    .navbar-box {
+        background-image: url(../images/nav-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 32px;
+        }
+
+        .homepage {
+            margin: 0 0 16px;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+#page {
+    color: $secondary;
+}
+
+.hamburger {
+    position: fixed;
+    right: 2%;
+    top: 4%;
+    width: 35px;
+    height: 40px;
+    z-index: 100;
+    cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+        top: 2%;
+        right: 4%;
+    }
+
+    span {
+        display: block;
+        margin: 12px auto;
+        background-color: $primary;
+        width: 100%;
+        height: 3px;
+        border-radius: 4px;
+        transition: all 0.5s ease;
+    }
+
+    /* Hambuger hover animation */
+    &:hover {
+        span:first-child {
+            transform: translateY(-2px);
+        }
+
+        span:last-child {
+            transform: translateY(2px);
+        }
+    }
+}
+
+
+/* Hambuger click animation to cross */
+
+.hamburger.is-opened {
+    span:first-child {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+        transform: scaleX(0);
+    }
+
+    span:last-child {
+        transform: translateY(-20px) rotate(-45deg);
+    }
+}

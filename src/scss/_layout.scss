@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @include a-hover;
+
+    p {
+        font-size: 1rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: .875rem;
+        }
+    }
+}
+
+.footer {
+    margin: 8% 0 0% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icons {
+        a {
+            padding: 0 4px;
+        }
+
+        img {
+            @include media-breakpoint-down(md) {
+                width: 36px;
+            }
+        }
+    }
+
+    &-copyright {
+        margin: 16px 0;
+        color: rgba($primary, $alpha: 0.5);
+    }
+}
+
+
+/*- 圖片比例 -*/
+
+.img-by {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 102%;
+        height: auto;
+    }
+
+    &-1by1 {
+        padding-bottom: 100%;
+    }
+
+    &-4by3 {
+        padding-bottom: 75%;
+    }
+
+    &-16by9 {
+        padding-bottom: 56.25%;
+    }
+
+    &-5by2 {
+        padding-bottom: 40%;
+    }
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 8px 16px;
+    background-color: $primary;
+}
+
+//scrollbar
+// @include media-breakpoint-up(lg) {
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #cda974, transparent);
+    border-radius: 6px;
+}
+
+// }

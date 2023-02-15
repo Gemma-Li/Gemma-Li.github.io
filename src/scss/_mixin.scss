@@ -1,0 +1,58 @@
+@mixin line-height {
+    line-height: 2rem;
+}
+
+@mixin a-hover {
+
+    a,
+    .btn {
+        transition: all .25s linear;
+
+        &:hover {
+            opacity: 80%;
+            // list-style: none;
+            text-decoration: none;
+        }
+    }
+}
+
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin position-absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin idx-goto-size {
+    width: 300px;
+    height: 300px;
+
+    @media (max-width: 1440px) {
+        width: 280px;
+        height: 280px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        width: 200px;
+        height: 200px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@mixin page-mt {
+    margin-top: 5%;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 8%;
+    }
+}

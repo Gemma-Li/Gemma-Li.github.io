@@ -1,0 +1,76 @@
+<!-- index.nunjucks -->
+{% extends "layout-portfolio.html" %}
+<!--Title setting-->
+{% block title %}高雄市表演藝術花園{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<!-- 內容 -->
+<div class="portfolio-page portfolio-inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-box">
+                <div class="left"></div>
+            </div>
+            <div class="right-box">
+                <div class="right">
+                    <img src="./images/pr-garden/banner.png" class="img-fluid banner" alt="">
+                    <div class="title">
+                        <div class="">
+                            <h3 class="font-weight-bold">高雄市表演藝術花園</h3>
+                            <p>工作事項：客戶訪談、功能架構規劃、HTML與SCSS切版
+                                <br>使用工具與軟體：XMind、Axure RP、Adobe Xd、HTML、SCSS
+                            </p>
+                        </div>
+                        <a target="blank" class="btn btn-primary btn-sm" href="https://art-garden.khcc.gov.tw/"
+                            role="button">網站展示 &gt;</a>
+                    </div>
+
+                    <h4 class="font-weight-bold">【網站介紹】</h4>
+                    <p class="">推動街頭藝術風氣， 鼓勵藝文活動多元發展， 營造都市人文風貌，豐富市民精神生活促進街頭藝人合理使用展演空間並鼓勵街頭藝人從事街頭藝術文化活動。</p>
+
+                    <h4 class="font-weight-bold mt-4">【製作過程】</h4>
+                    <p>
+                        <strong class="text-secondary">客戶需求</strong> 以前都是線下紙本申請審核資格，現在想改成線上作業減輕審核及管理作業上的麻煩
+                        <br> <strong class="text-secondary">訪談過程</strong> 街頭藝人評鑑報名後的內部審核流程再請完整說明，像是需要準備什麼資料或是資格才能申請等等？
+                        <br>客戶：街頭藝人報名須填寫基本資料及上傳影片、照片和身分證正反面，機關內部審核內容包括：
+                        <br> - 申請人年齡是否滿16歲
+                        <br> - 照片和身分證是否清晰並符合報名資格<br> - 申請項目是否合乎規定（不得使用明火、不得使用食品製作等）<br><br>
+                        <img class="img-fluid mb-1 rounded" src="./images/pr-garden/functional-map.png" alt="">
+                    </p>
+                    <div class="mb-5">
+                        <img class="img-fluid mb-2" src="./images/pr-garden/wireframe1.png" alt="">
+                        <p>在線稿上標註注意事項請客戶和工程師確認</p>
+                    </div>
+
+                    <h4 class="font-weight-bold mt-4">【解決問題】</h4>
+                    <div class="mb-5">
+                        <img class="img-fluid mb-2" src="./images/pr-garden/wireframe2.png" alt="">
+                        <p> <strong class="text-secondary">Before：</strong>申請表單送出才會預覽已填寫的表單，若填寫錯誤只能聯絡承辦修改資料<br>
+                            <strong class="text-secondary">After：</strong>現在改成送出前預覽填寫的表單才可以送出，節省人工審核時間<br><br>
+                            <strong
+                                class="text-secondary">Before：</strong>若未滿16歲、16~20歲都可以送申請，但承辦都要查是否有符合資格或是有附上法定代理人同意書<br>
+                            <strong class="text-secondary">After：</strong>填寫年齡判斷才能繼續填表單<br> 未滿16歲 > 直接不得填寫<br> 16-20歲 >
+                            在附件頁有法定代理人同意書上傳欄位
+                            <br>
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <img class="img-fluid mb-2" src="./images/pr-garden/wireframe3.png" alt="">
+                        <p> <strong class="text-secondary">Before：</strong>申請表單送出才會預覽已填寫的表單，若填寫錯誤只能聯絡承辦修改資料<br>
+                            <strong class="text-secondary">After：</strong>改成團名顯示並非申請人
+                        </p>
+                    </div>
+                    <a class="btn btn-primary btn-sm " href="portfolio.html" role="button">
+                        &lt; Back to proflio </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 內容 -->
+{% endblock %} {% block js %}
+<script>
+</script>
+{% endblock %}

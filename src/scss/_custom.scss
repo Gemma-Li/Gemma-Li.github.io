@@ -1,0 +1,308 @@
+// idx
+.idx-banner {
+    margin-top: 4%;
+
+    @media (max-width: 1680px) {
+        width: 70%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+
+    .carousel-shape {
+        .carousel-item img {
+            border-radius: 0px $border-radius $border-radius 0px;
+
+            @include media-breakpoint-down(sm) {
+                border-radius: 0px;
+            }
+        }
+    }
+}
+
+.idx-bg {
+    background-image: url(../images/idx-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 72%;
+
+    @include media-breakpoint-down(md) {
+        background-image: url(../images/idx-bg-md.svg);
+        background-position-y: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-image: url(../images/idx-bg-sm.svg);
+        background-position-y: 35%;
+    }
+}
+
+.goto {
+    position: relative;
+    display: block;
+    z-index: 1;
+    left: 60%;
+    top: -180px;
+    @include idx-goto-size;
+
+    @media (max-width: 1680px) {
+        left: 65%;
+    }
+
+    @media (max-width: 1440px) {
+        left: 85%;
+        top: -170px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        top: -100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        left: 52%;
+        top: -70px;
+    }
+
+    .position {
+        @include position-absolute-center;
+        @include idx-goto-size;
+    }
+
+    .emblem {
+        @include idx-goto-size;
+        position: absolute;
+        margin: 0 auto;
+        border-radius: 50%;
+        animation: spinZ 20s linear infinite;
+        color: $secondary;
+        text-align: center;
+        font-weight: bold;
+
+        span {
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            text-transform: uppercase;
+            font-size: 2vh;
+            transition: all .5s cubic-bezier(0, 0, 0, 1);
+
+            @include media-breakpoint-down(lg) {
+                font-size: 0.5rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 10px;
+            }
+        }
+
+        @keyframes spinZ {
+            0% {
+                transform: rotateZ(360deg);
+            }
+
+            100% {
+                transform: rotateZ(0deg);
+            }
+        }
+    }
+
+    .circle {
+        @include position-absolute-center;
+        @include flex-align-center;
+        @include line-height;
+        width: 180px;
+        height: 180px;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 100%;
+        text-align: center;
+
+        @include media-breakpoint-down(lg) {
+            width: 120px;
+            height: 120px;
+            font-size: 1rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 75px;
+            height: 75px;
+            font-size: 8px;
+            line-height: normal;
+        }
+    }
+}
+
+.idx-about {
+    align-items: center;
+    padding: 8% 0 0% 0;
+    color: $primary;
+
+    .deco {
+        position: absolute;
+        left: 0;
+        width: 45%;
+        height: 500px;
+        border-radius: 0px $border-radius $border-radius 0px;
+        background-color: #fff;
+    }
+
+    h5 {
+        @include line-height;
+        font-weight: normal;
+    }
+
+    .idx-about-stickers {
+        @include media-breakpoint-down(md) {
+            margin: 0 0 32px 0;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.idx-work {
+    &-1 {
+        padding: 20% 0 16% 0;
+
+        .box {
+            border-radius: $border-radius;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right bottom;
+            height: 250px;
+            padding: 40px;
+            color: $primary;
+            font-weight: bold;
+
+            @include media-breakpoint-down(lg) {
+                margin: 16px 0;
+            }
+        }
+
+        .box1 {
+            background-image: url(../images/idx-work1.png);
+        }
+
+        .box2 {
+            background-image: url(../images/idx-work2.png);
+        }
+
+        .box3 {
+            background-image: url(../images/idx-work3.png);
+        }
+    }
+
+    &-2 {
+        align-items: center;
+        color: $primary;
+        @include line-height;
+
+        .idx-work-2-text {
+            @include media-breakpoint-down(lg) {
+                margin: 32px 0 0 0;
+            }
+        }
+    }
+}
+
+//portfolio
+.wrapper-portfolio {
+    background-image: url(../images/portfolio/portfolio-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media-breakpoint-down(lg) {
+        background-image: url(../images/portfolio/portfolio-bg-md.svg);
+        height: 100vh;
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-image: url(../images/portfolio/portfolio-bg-sm.svg);
+        height: unset;
+    }
+}
+
+.portfolio-page {
+    .card-boxs {
+        @include page-mt;
+    }
+
+    .sm-mt {
+        @include media-breakpoint-down(sm) {
+            margin-top: 12%;
+        }
+    }
+
+    .card-title {
+        margin: 0;
+    }
+
+    .card-body {
+        padding: 1.25rem 2.5rem
+    }
+
+    .card-text {
+        color: $secondary;
+    }
+}
+
+.portfolio-inner-page {
+
+    // height: 85vh;
+    .left-box {
+        @include make-col-ready();
+        @include make-col(1.5);
+
+        @include media-breakpoint-down(lg) {
+            @include make-col(0);
+        }
+    }
+
+    .right-box {
+        @include make-col-ready();
+        @include make-col(10.5);
+
+        @include media-breakpoint-down(lg) {
+            @include make-col(12);
+        }
+    }
+
+    .right {
+        @include page-mt;
+        background: #fff;
+        border-radius: $border-radius;
+        padding: 2.5rem;
+        height: 88vh;
+        overflow-y: auto;
+        color: $primary;
+
+        @include media-breakpoint-down(lg) {
+            padding: 1rem;
+        }
+    }
+
+    .banner {
+        border-radius: $border-radius;
+        margin: 0 0 24px 0;
+    }
+
+    .title {
+        @include flex-align-center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    p {
+        color: $dark;
+    }
+}

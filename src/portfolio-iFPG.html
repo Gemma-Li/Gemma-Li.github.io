@@ -1,0 +1,68 @@
+<!-- index.nunjucks -->
+{% extends "layout-portfolio.html" %}
+<!--Title setting-->
+{% block title %}台塑iFPG員工專用APP{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<!-- 內容 -->
+<div class="portfolio-page portfolio-inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-box">
+                <div class="left"></div>
+            </div>
+            <div class="right-box">
+                <div class="right">
+                    <img src="./images/pr-ifpg/banner.png" class="img-fluid banner" alt="">
+                    <div class="title">
+                        <div class="">
+                            <h3 class="font-weight-bold">台塑iFPG員工專用APP</h3>
+                            <p>工作事項：視覺設計、協助線稿規劃
+                                <br>使用工具與軟體：Adobe illustrator、Adobe Xd
+                            </p>
+                        </div>
+                        <a target="blank" class="btn btn-primary btn-sm"
+                            href="https://xd.adobe.com/view/2bd69760-9c57-49e8-88ca-75cbe35db499-7e85/grid/?mv=product&mv2=accc&product=Creative+Cloud+Desktop&product-version=5.9.0.373"
+                            role="button">線上檔展示&gt;</a>
+                    </div>
+
+                    <h4 class="font-weight-bold mt-3">【APP介紹】</h4>
+                    <p class="">台塑員工專用APP，可以觀看員工與公司資料像是薪資、公司公告、表單申請，也可以利用APP通話及視訊聯絡其他同事。</p>
+                    <div class="my-4">
+                        <img class="img-fluid" src="./images/pr-ifpg/style-guide.png" alt="">
+                        <img class="img-fluid" src="./images/pr-ifpg/component.png" alt="">
+                        <img class="img-fluid" src="./images/pr-ifpg/icons.png" alt="">
+                    </div>
+                    <h4 class="font-weight-bold">【製作過程】</h4>
+                    <p>在企劃同仁線搞繪製完成時與相關人員討論優化流程（以下為討論時繪製的線搞）</p>
+                    <div class="mb-5">
+                        <img class="img-fluid mb-1" src="./images/pr-ifpg/wireframe1.JPG" alt="">
+                        <p>Before:訊息只顯示10則，看更多則需要點MORE看更多，增加操作次數<br>After:訊息全部顯示出來，把link icon fixed在上方，這樣下滑時不會被滑走
+                        </p>
+                    </div>
+
+                    <div class="mb-5">
+                        <img class="img-fluid mb-1" src="./images/pr-ifpg/wireframe2.JPG" alt="">
+                        <p>Before:只有規劃icon連去各頁<br>After:資料視覺化；像是banner做成圖、個人用餐統計做成圖表；好閱讀且增加視覺豐富度
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <img class="img-fluid mb-1" src="./images/pr-ifpg/wireframe3.JPG" alt="">
+                        <p>Before:點icon跳頁，到內頁點icon跳窗詢問是否通話；且內頁的顯示內容跟列表頁一樣，不需要再多一頁<br>After:icon點下去跳窗詢問就能通話，輕量化操作流程
+                        </p>
+                    </div>
+                    <a class="btn btn-primary btn-sm mt-5" href="portfolio.html" role="button">
+                        &lt; Back to proflio </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 內容 -->
+{% endblock %} {% block js %}
+<script>
+</script>
+{% endblock %}

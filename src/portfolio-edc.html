@@ -1,0 +1,53 @@
+<!-- index.nunjucks -->
+{% extends "layout-portfolio.html" %}
+<!--Title setting-->
+{% block title %}多元支付刷卡機{% endblock %}
+<!--Nav setting-->
+{% block navigation %} {% import 'nav.html' as nav %}
+<!-- Set navitem to active -->
+{{nav.active('index')}} {% endblock %} {% block HeadContent %} {% endblock %} {% block content %}
+<!-- 內容 -->
+<div class="portfolio-page portfolio-inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-box">
+                <div class="left"></div>
+            </div>
+            <div class="right-box">
+                <div class="right">
+                    <img src="./images/pr-edc/banner.png" class="img-fluid banner" alt="">
+                    <div class="title">
+                        <div class="">
+                            <h3 class="font-weight-bold">多元支付刷卡機</h3>
+                            <p>工作事項：視覺設計優化傳統刷卡機介面、與客戶溝通需求
+                                <br>使用工具與軟體：Sketch
+                            </p>
+                        </div>
+                        <a target="blank" class="btn btn-primary btn-sm"
+                            href="https://marvelapp.com/prototype/5ci23bi/screen/72131367" role="button">線上檔展示&gt;</a>
+                    </div>
+
+                    <h4 class="font-weight-bold mt-3">【APP介紹】</h4>
+                    <p class="">店家自行結帳或是自助點餐機的刷卡機</p>
+                    <div class="my-4">
+                        <img class="img-fluid" src="./images/pr-edc/style-guide.png" alt="">
+                        <img class="img-fluid" src="./images/pr-edc/component.png" alt="">
+                    </div>
+                    <h4 class="font-weight-bold">【製作過程】</h4>
+                    <p>使用情境會離機台有一點距離整體字型設計較大方便閱讀 幫助使用者在結帳時更清楚簡單操作</p>
+                    <div class="">
+                        <img class="img-fluid" src="./images/pr-edc/mockup.png" alt="">
+                        <p>像是數字鍵盤加大增加閱讀行且方便操作 </p>
+                    </div>
+                    <a class="btn btn-primary btn-sm mt-5" href="portfolio.html" role="button">
+                        &lt; Back to proflio </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 內容 -->
+{% endblock %} {% block js %}
+<script>
+</script>
+{% endblock %}
